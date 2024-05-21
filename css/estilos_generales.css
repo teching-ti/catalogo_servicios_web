@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Mukta Malar", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.barra-navegacion{
+    display: flex;
+    padding: 1.8rem 1.8rem 0 1.8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-menu{
+    display: flex;
+    gap: 1.6rem;
+    list-style: none;
+}
+
+.elemento-lista-menu{
+    padding: 0 .4rem;
+    cursor: pointer;
+    border: none;
+    border-bottom: solid 1.5px transparent;
+    transition: color 0.2s ease-in-out;
+    position: relative;
+}
+
+.elemento-lista-menu::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #2272ff;
+    transition: width 0.3s ease-in-out;
+}
+
+.elemento-lista-menu:hover::after {
+    width: 100%;
+}
+
+main{
+    margin-top: 104px;
+}
+
+.mensaje-inicial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mensaje-inicial-imagen-texto{
+    display: flex;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+figure{
+    width: 40%;
+}
+
+.imagen-fondo{
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.mensaje-inicial-texto{
+    width: 60%;
+    padding: 1.4em;
+    text-align: justify;
+}
+
+.texto-intermedio{
+    display: grid;
+    place-content: center;
+    margin-top: 104px;
+    width: 100%;
+
+}
+
+.texto-intermedio p{
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 24px;
+}
+
+.tarjetas-categorias-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 3.5rem;
+}
+
+.tarjeta{
+    display: flex;
+    border: solid 1px black;
+    flex-direction: column;
+}
+
+/* .tarjeta-imagen{
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    width: 100%;;
+} */
+
+.tarjeta-imagen{
+    width: 50%;
+}
+
+.tarjeta h2{
+    margin-top: .4rem;
+    text-align: center;
+}
+
+.tarjeta p{
+    font-size: large;
+    text-align: justify;
+}
+
+/*rotate image*/
+
+@media (max-width: 760px){
+    /* contenedor de imagen*/
+    figure{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* opciones del menu */
+    .lista-menu{
+        display: none;
+    }
+
+    /* seccion de imagen y texto */
+    .mensaje-inicial-imagen-texto{
+        flex-direction: column;
+    }
+    
+    .figure-imagen-fondo{
+        width: 100%;
+    }
+
+    .mensaje-inicial-texto{
+        width: 100%;
+    }
+}
