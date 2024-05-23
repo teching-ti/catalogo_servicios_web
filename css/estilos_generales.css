@@ -8,11 +8,39 @@
     font-style: normal;
 }
 
+body{
+    background-color: #2f3542;
+    /* background: rgb(9,94,15);
+    background: linear-gradient(302deg, rgba(9,94,15,1) 0%, rgba(9,68,121,1) 51%, rgba(1,10,43,1) 100%); */
+    color: #f1f2f6;
+}
+
+header{
+    display: inline-block;
+    background: rgb(2,5,15);
+    background: linear-gradient(138deg, rgba(2,5,15,1) 0%, rgba(10,33,61,0.9304096638655462) 78%, rgba(20,57,16,0.8603816526610644) 100%);
+    /* background: rgb(0,6,31);
+    background: linear-gradient(138deg, rgba(0,6,31,1) 0%, rgba(10,33,61,0.9304096638655462) 78%, rgba(20,57,16,0.8603816526610644) 100%); */
+    /* background: rgb(12,38,13);
+    background: linear-gradient(313deg, rgba(12,38,13,1) 15%, rgba(12,50,85,1) 30%, rgba(3,9,36,1) 75%); */
+    /* background: rgb(0,6,31);
+    background: linear-gradient(157deg, rgba(0,6,31,1) 0%, rgba(10,33,61,1) 60%, rgba(12,47,9,1) 100%); */
+
+}
+
 .barra-navegacion{
     display: flex;
     padding: 1.8rem 1.8rem 0 1.8rem;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo-teching{
+    transition: all ease-in-out .5s;
+    filter: drop-shadow(2px 2px 2px #fff);
+    opacity: 0;
+    position: relative;
+    left: 35px;
 }
 
 .lista-menu{
@@ -54,13 +82,15 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 8rem 0px;
 }
 
 .mensaje-inicial-imagen-texto{
     display: flex;
-    width: 80%;
+    width: 65%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: .8rem;
 }
 
 figure{
@@ -71,6 +101,31 @@ figure{
     width: 100%;
     height: 100%;
     transform: scaleX(-1);
+    border-radius: 1rem;
+}
+
+.contenedor-titulos{
+    margin-bottom: 5rem;
+}
+
+.ti-catalogo-texto{
+    font-family: "Nunito", sans-serif;
+    font-size: 3.4rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ti-catalogo-texto2{
+    font-family: "Nunito", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.mensaje-inicial-parrafo{
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
 }
 
 .mensaje-inicial-texto{
@@ -144,6 +199,7 @@ figure{
     /* seccion de imagen y texto */
     .mensaje-inicial-imagen-texto{
         flex-direction: column;
+        width: 96%;
     }
     
     .figure-imagen-fondo{
