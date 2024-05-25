@@ -17,15 +17,18 @@ body{
 
 header{
     display: inline-block;
-    background: rgb(2,5,15);
-    background: linear-gradient(138deg, rgba(2,5,15,1) 0%, rgba(10,33,61,0.9304096638655462) 78%, rgba(20,57,16,0.8603816526610644) 100%);
-    /* background: rgb(0,6,31);
-    background: linear-gradient(138deg, rgba(0,6,31,1) 0%, rgba(10,33,61,0.9304096638655462) 78%, rgba(20,57,16,0.8603816526610644) 100%); */
-    /* background: rgb(12,38,13);
-    background: linear-gradient(313deg, rgba(12,38,13,1) 15%, rgba(12,50,85,1) 30%, rgba(3,9,36,1) 75%); */
-    /* background: rgb(0,6,31);
-    background: linear-gradient(157deg, rgba(0,6,31,1) 0%, rgba(10,33,61,1) 60%, rgba(12,47,9,1) 100%); */
+    /* background: rgb(2,5,15); */
+    /* background: linear-gradient(138deg, rgba(2,5,15,1) 0%, rgba(10,33,61,0.9304096638655462) 78%, rgba(20,57,16,0.8603816526610644) 100%); */
+}
 
+.header-oscuro{
+    color: #f1f2f6;
+    background: linear-gradient(138deg, rgba(2,5,15,1) 0%, rgba(10,33,61,0.9304096638655462) 78%, rgba(20,57,16,0.8603816526610644) 100%);
+}
+
+.header-claro{
+    color: #000000;
+    background: linear-gradient(149deg, rgba(255,255,255,1) 26%, rgba(218,240,242,1) 63%, rgba(30,170,237,0.7035189075630253) 100%);
 }
 
 .barra-navegacion{
@@ -37,10 +40,12 @@ header{
 
 .logo-teching{
     transition: all ease-in-out .5s;
-    filter: drop-shadow(2px 2px 2px #fff);
-    opacity: 0;
+    filter: drop-shadow(1px 1px 1px #f8f3f3);
+    /* opacity: 0; */
     position: relative;
-    left: 35px;
+    /* left: 35px; */
+    margin-left: 50px;
+    transform: scale(110%);
 }
 
 .lista-menu{
@@ -51,11 +56,18 @@ header{
 
 .elemento-lista-menu{
     padding: 0 .4rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
     cursor: pointer;
     border: none;
     border-bottom: solid 1.5px transparent;
-    transition: color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     position: relative;
+}
+
+.elemento-lista-menu:hover{
+    transition: all ease-in-out .3s;
+    transform: translateY(4px);
 }
 
 .elemento-lista-menu::after {
@@ -87,19 +99,29 @@ main{
 
 .mensaje-inicial-imagen-texto{
     display: flex;
-    width: 65%;
+    width: 70%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background: rgba(0, 0, 0, 0.2);
     padding: .8rem;
+    border-radius: 8px;
 }
 
-figure{
+.mensaje-inicial-imagen-texto-claro{
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.mensaje-inicial-imagen-texto-oscuro{
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.figure-imagen-fondo{
+    display: flex;
+    align-items: center;
     width: 40%;
 }
 
 .imagen-fondo{
     width: 100%;
-    height: 100%;
+    min-height: 430px;
     transform: scaleX(-1);
     border-radius: 1rem;
 }
@@ -113,6 +135,10 @@ figure{
     font-size: 3.4rem;
     font-weight: 500;
     font-style: normal;
+    background: rgb(25,91,171);
+    background: linear-gradient(138deg, rgba(25,91,171,1) 13%, rgba(72,115,166,1) 46%, rgba(38,117,29,0.8603816526610644) 72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .ti-catalogo-texto2{
@@ -182,13 +208,48 @@ figure{
     text-align: justify;
 }
 
+.circle {
+    width: 220px;
+    height: 220px;
+    top: 13px;
+    left: 230px;
+    background-color: none;
+    border: dotted #fff;
+    border-radius: 50%; /* Hace que el div se vea como un círculo */
+    animation: spin 2.2s linear infinite; /* Aplica la animación llamada "spin" */
+}
+
+/* Definición de la animación */
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Inicia la rotación desde 0 grados */
+    }
+    to {
+        transform: rotate(360deg); /* Termina la rotación en 360 grados */
+    }
+}
+
 /*rotate image*/
 
 @media (max-width: 760px){
+
+    .barra-navegacion{
+        justify-content: center;
+    }
+
+    /* .ti-catalogo-texto{
+        
+    } */
+
     /* contenedor de imagen*/
-    figure{
+    .contenedor-logo{
         display: flex;
         justify-content: center;
+    }
+
+    .logo-teching{
+
+        margin: 35px 0 0 0;
     }
 
     /* opciones del menu */
@@ -204,6 +265,10 @@ figure{
     
     .figure-imagen-fondo{
         width: 100%;
+    }
+
+    .imagen-fondo{
+        height: auto;
     }
 
     .mensaje-inicial-texto{

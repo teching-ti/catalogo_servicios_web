@@ -11,38 +11,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
-  
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   </head>
   <body>
-    <header>
+    <header class="header-oscuro">
       <nav class="barra-navegacion">
-        <figure>
-          <img src="./assets/images/logo_teching.png" alt="logo-teching" class="logo-teching"/>
+        <figure class="contenedor-logo">
+          <img src="./assets/images/logo_teching.png" alt="logo-teching" class="logo-teching animate__animated animate__fadeInLeft"/>
         </figure>
-        <ul class="lista-menu">
+        <ul class="lista-menu animate__animated animate__fadeInRight">
           <li class="elemento-lista-menu">Inicio</li>
           <li class="elemento-lista-menu">Familias de Servicios</li>
           <li class="elemento-lista-menu">Servicios</li>
           <li class="elemento-lista-menu">Subcategoría de servicios</li>
           <li class="elemento-lista-menu">Ejemplos</li>
+          <li class="btn-cambiar-modo" style="display: flex; justify-content: center; align-items: center; cursor: pointer;"><i class="fa-solid fa-circle-half-stroke"></i></li>
         </ul>
       </nav>
-      <section class="mensaje-inicial">
-        <div class="mensaje-inicial-imagen-texto">
+      <section class="mensaje-inicial animate__animated animate__fadeInUp">
+        <!-- <div class="circle"></div> -->
+        <div class="mensaje-inicial-imagen-texto mensaje-inicial-imagen-texto-oscuro">
           <figure class="figure-imagen-fondo">
             <img src="./assets/images/ti_fondo_modificado.jpg" alt="image-de-ti" class="imagen-fondo">
+
           </figure>
           <div class="mensaje-inicial-texto">
             <div class="contenedor-titulos">
               <p class="ti-catalogo-texto">Catálogo de servicios</p>
               <p class="ti-catalogo-texto2">Tecnologías de la Información</p>
             </div>
-            <p class="mensaje-inicial-parrafo">El documento presente pertenece al área de TI de TECHING..., Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium amet, dolores, expedita ipsum necessitatibus ratione numquam porro saepe aut vel est sit quidem corporis, assumenda ipsa vitae doloribus laboriosam non excepturi repudiandae quae mollitia? Nisi neque dignissimos repudiandae perferendis animi impedit voluptates itaque corrupti non.</p>
+            <p class="mensaje-inicial-parrafo">El documento presente pertenece al área de TI de TECHING, nuestro objetivo con esta página web es informar a todos sobre el catálogo de servicios que el área de Tecnologías de la Información (TI) de nuestra empresa pone a su disposición. En un mundo cada vez más digital y orientado a la tecnología, es fundamental que todos los miembros de nuestra organización comprendan y aprovechen al máximo los recursos y servicios que TI ofrece.</p>
           </div>
         </div>
       </section>
     </header>
-
     <main>
       <section class="texto-intermedio">
         <p>Los servicios que brindamos siguen una jerarquía definida para tener una mejor comprensión y organización. Se clasifican en tres categorías principales: </p>
