@@ -1,0 +1,469 @@
+{
+    "familia de servicio": [
+        {
+            "id": "f1",
+            "nombre_familia": "Servicio de Soporte Técnico y Mantenimineto"
+        },
+        {
+            "id": "f2",
+            "nombre_familia": "Servicios Administrativos"
+        },
+        {
+            "id": "f3",
+            "nombre_familia": "Servicios de Accesos"
+        },
+        {
+            "id": "f4",
+            "nombre_familia" : "Servicios de Software y Aplicaciones"
+        },
+            
+        {
+            "id": "f5",
+            "nombre_familia": "Servicios de temetría"
+        }
+    ],
+    "servicios": [
+        {
+            "id": "s1",
+            "id_familia_servicios": "f2",
+            "nombre": "Actualización de base de datos del personal (por definir nombre)" 
+        }, 
+        {
+            "id": "s2",
+            "id_familia_servicios": "f1",
+            "nombre": "Asignación de dispositivos"
+        },
+        {
+            "id": "s3",
+            "id_familia_servicios": "f3",
+            "nombre": "Cámaras de seguridad"
+        },
+        {
+            "id": "s4",
+            "id_familia_servicios": "f1",
+            "nombre": "Correos"
+        },
+        {
+            "id": "s5",
+            "id_familia_servicios": "f2",
+            "nombre": "Cotizaciones"
+        },
+        {
+            "id": "s6",
+            "id_familia_servicios": "f4",
+            "nombre": "Desarrollo de software"
+        },
+        {
+            "id": "s7",
+            "id_familia_servicios": "f1",
+            "nombre": "Firmas corporativas"
+        },
+        {
+            "id": "s8",
+            "id_familia_servicios": "f1",
+            "nombre": "Helpdesk"
+        },
+        {
+            "id": "s9",
+            "id_familia_servicios": "f1",
+            "nombre": "Impresiones"
+        },
+        {
+            "id": "s10",
+            "id_familia_servicios": "f2",
+            "nombre": "Informes - activos informáticos"
+        },
+        {
+            "id": "s11",
+            "id_familia_servicios": "f2",
+            "nombre": "Informes - telemetría"
+        },
+        {
+            "id": "s12",
+            "id_familia_servicios": "f4",
+            "nombre": "Mantenimiento de software"
+        },
+        {
+            "id": "s13",
+            "id_familia_servicios": "f3",
+            "nombre": "Microsoft teams"
+        },
+        {
+            "id": "s14",
+            "id_familia_servicios": "f5",
+            "nombre": "NATEOS"
+        },
+        {
+            "id": "s15",
+            "id_familia_servicios": "f3",
+            "nombre": "OneDrive"
+        },
+        {
+            "id": "s16",
+            "id_familia_servicios": "f3",
+            "nombre": "Outlook"
+        },
+        {
+            "id": "s17",
+            "id_familia_servicios": "f1",
+            "nombre": "Préstamo de activos de ti"
+        },
+        {
+            "id": "s18",
+            "id_familia_servicios": "f1",
+            "nombre": "Redes e internet"
+        },
+        {
+            "id": "s19",
+            "id_familia_servicios": "f3",
+            "nombre": "Sharepoint"
+        },
+        {
+            "id": "s20",
+            "id_familia_servicios": "f5",
+            "nombre": "SIM CARD"
+        },
+        {
+            "id": "s21",
+            "id_familia_servicios": "f3",
+            "nombre": "Telemetría"
+        },
+        {
+            "id": "s22",
+            "id_familia_servicios": "f5",
+            "nombre": "VPN"
+        }
+    ],
+    "subservicios": [
+        {
+            "id": "ss1",
+            "id_servicio": "s16",
+            "nombre": "Acceso a backup de correo"
+        },
+        {
+            "id": "ss2",
+            "id_servicio": "s3",
+            "nombre": "Acceso a grabación de cámaras de seguridad"
+        },
+        {
+            "id": "ss3", 
+            "id_servicio": "s17",
+            "nombre": "Accesorios de móviles"
+        },
+        {
+            "id": "ss4",
+            "id_servicio": "s17",
+            "nombre": "Accesorios de PC y Laptops"
+        },
+        {
+            "id": "ss5",
+            "id_servicio": "s22",
+            "nombre": "Actualización"
+        },
+        {
+            "id": "ss6",
+            "id_servicio": "s7",
+            "nombre": "Actualización de firmas"
+        },
+        {
+            "id": "ss7",
+            "id_servicio": "s4",
+            "nombre": "Actualización de perfil de usuario"
+        },
+        {
+            "id": "ss8",
+            "id_servicio": "s12",
+            "nombre": "Actualización y mejores"
+        },
+        {
+            "id": "ss9",
+            "id_servicio": "s13",
+            "nombre": "Agregar a equipo de teams"
+        },
+        {
+            "id": "ss10",
+            "id_servicio":"s19",
+            "nombre": "Agregar usuario a sitio compartido"
+        },
+        {
+            "id": "ss11",
+            "id_servicio": "s20",
+            "nombre": "Alta"
+        },
+        {
+            "id": "ss12",
+            "id_servicio": "s1",
+            "nombre": "Alta del usuario"
+        },
+        {
+            "id": "ss13",
+            "id_servicio": "s9",
+            "nombre": "Ampliación de impresiones"
+        },
+        {
+            "id": "ss14",
+            "id_servicio": "s2",
+            "nombre": "Asignación de accesorios"
+        },
+        {
+            "id": "ss15",
+            "id_servicio": "s2",
+            "nombre": "Asignación de laptop"
+        },
+        {
+            "id": "ss16",
+            "id_servicio": "s2",
+            "nombre": "Asignación de móvil"
+        },
+        {
+            "id": "ss17",
+            "id_servicio": "s2",
+            "nombre": "Asignación de PC"
+        },
+        {
+            "id": "ss18",
+            "id_servicio": "s20",
+            "nombre": "Baja"
+        },
+        {
+            "id": "ss19",
+            "id_servicio": "s1",
+            "nombre": "Baja de un usuario"
+        },
+        {
+            "id": "ss20",
+            "id_servicio": "s20",
+            "nombre": "Cambios de planes"
+        },
+        {
+            "id": "ss21",
+            "id_servicio": "s10",
+            "nombre": "Celulares"
+        },
+        {
+            "id": "ss22",
+            "id_servicio": "s19",
+            "nombre": "Configurar niveles de acceso a carpeta compartida"
+        },
+        {
+            "id": "ss23",
+            "id_servicio": "s15",
+            "nombre": "Configurar niveles de acceso a carpeta compartida"
+        },
+        {
+            "id": "ss24",
+            "id_servicio": "s4",
+            "nombre": "Configurar reenvío de correos"
+        },
+        {
+            "id": "ss25",
+            "id_servicio": "s4",
+            "nombre": "Configurar respueta automática"
+        },
+        {
+            "id": "ss26",
+            "id_servicio": "s20",
+            "nombre": "Consultas referentes"
+        },
+        {
+            "id": "ss27",
+            "id_servicio": "s14",
+            "nombre": "Consultas referentes"
+        },
+        {
+            "id": "ss28",
+            "id_servicio": "s11",
+            "nombre": "Consumos"
+        },
+        {
+            "id": "ss29",
+            "id_servicio": "s22",
+            "nombre": "Creación"
+        },
+        {
+            "id": "ss30",
+            "id_servicio": "s14",
+            "nombre": "Creación"
+        },
+        {
+            "id": "ss31",
+            "id_servicio": "s15",
+            "nombre": "Crear enlaces a carpetas y archivos compartidos"
+        },
+        {
+            "id": "ss32",
+            "id_servicio": "s13",
+            "nombre": "Crear equipo en teams"
+        },
+        {
+            "id": "ss33",
+            "id_servicio": "s19",
+            "nombre": "Crear un nuevo sitio compartido"
+        },
+        {
+            "id": "ss34",
+            "id_servicio": "s21",
+            "nombre": "Credenciales para plataforma M2M"
+        },
+        {
+            "id": "ss35",
+            "id_servicio": "s13",
+            "nombre": "Eliminar equipo de teams"
+        },
+        {
+            "id": "ss36",
+            "id_servicio": "s19",
+            "nombre": "Eliminar usuario de sitio compartido"
+        },
+        {
+            "id": "ss37",
+            "id_servicio": "s11",
+            "nombre": "Excesos"
+        },
+        {
+            "id": "ss38",
+            "id_servicio": "s8",
+            "nombre": "Falla de accesorios PC/ Laptop/ Celulares"
+        },
+        {
+            "id": "ss39",
+            "id_servicio": "s8",
+            "nombre": "Falla de aplicativos/ programas"
+        },
+        {
+            "id": "ss40",
+            "id_servicio": "s8",
+            "nombre": "Falla de PC/ Laptop/ Celulares"
+        },
+        {
+            "id": "ss41",
+            "id_servicio": "s8",
+            "nombre": "Falla del sistema operativo"
+        },
+        {
+            "id": "ss42",
+            "id_servicio": "s9",
+            "nombre": "Falta de tóner"
+        },
+        {
+            "id": "ss43",
+            "id_servicio": "s18",
+            "nombre": "Habilitación de puntos de red adicionales"
+        },
+        {
+            "id": "ss44",
+            "id_servicio": "s18",
+            "nombre": "Habilitación de Wifi"
+        },
+        {
+            "id": "ss45",
+            "id_servicio": "s8",
+            "nombre": "Instalación y configuración de programas/ apliactivos"
+        },
+        {
+            "id": "ss46",
+            "id_servicio": "s11",
+            "nombre": "Inventario"
+        },
+        {
+            "id": "ss47",
+            "id_servicio": "s10",
+            "nombre": "Laptop"
+        },
+        {
+            "id": "ss48",
+            "id_servicio": "s17",
+            "nombre": "Laptop de backup"
+        },
+        {
+            "id": "ss49",
+            "id_servicio": "s18",
+            "nombre": "NATEOS"
+        },
+        {
+            "id": "ss50",
+            "id_servicio": "s19",
+            "nombre": "Nueva carpeta compartida"
+        },
+        {
+            "id": "ss51",
+            "id_servicio": "s4",
+            "nombre": "Nueva cuenta corporativa"
+        },
+        {
+            "id": "ss52",
+            "id_servicio": "s9",
+            "nombre": "Papel atascado"
+        },
+        {
+            "id": "ss53",
+            "id_servicio": "s9",
+            "nombre": "Papel manchado"
+        },
+        {
+            "id": "ss54",
+            "id_servicio": "s10",
+            "nombre": "PC"
+        },
+        {
+            "id": "ss55",
+            "id_servicio": "s9",
+            "nombre": "Problema de escaneo"
+        },
+        {
+            "id": "ss56",
+            "id_servicio": "s9",
+            "nombre": "Problema de impresión"
+        },
+        {
+            "id": "ss57",
+            "id_servicio": "s8",
+            "nombre": "Problemas de conectividad a internet"
+        },
+        {
+            "id": "ss58",
+            "id_servicio": "s4",
+            "nombre": "Problemas de envío y recepción de correo"
+        },
+        {
+            "id": "ss59",
+            "id_servicio": "s5",
+            "nombre": "Productos de TI"
+        },
+        {
+            "id": "ss60",
+            "id_servicio": "s17",
+            "nombre": "Proyector"
+        },
+        {
+            "id": "ss61",
+            "id_servicio": "s4",
+            "nombre": "Reporte de correos spam"
+        },
+        {
+            "id": "ss62",
+            "id_servicio": "s5",
+            "nombre": "Servicios de TI"
+        },
+        {
+            "id": "ss63",
+            "id_servicio": "s6",
+            "nombre": "Software personalizado"
+        },
+        {
+            "id": "ss64",
+            "id_servicio": "s22",
+            "nombre": "Soporte"
+        },
+        {
+            "id": "ss65",
+            "id_servicio": "s12",
+            "nombre": "Soporte de software y resolución ante problemas"
+        },
+        {
+            "id": "ss66",
+            "id_servicio": "s18",
+            "nombre": "VPN"
+        }
+    ]
+}
