@@ -43,45 +43,43 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     })
 
+    let url = "./js/datos.json"
+
     const btnOrganizacion = document.querySelectorAll(".btn-organizacion")
     btnOrganizacion.forEach((e)=>{
         e.addEventListener("click", ()=>{
-            // realizar una operación similar cargando y mostrando los servicos que el área de ti ofrece a cda organizacipin¿ín 
-            let organizacion_especifica = document.createElement("div")
-            organizacion_especifica.innerHTML = `<p>Probando en caso del primer dato</p>`
-            // implementar sistema de base de datos o json para poder cargar información en el servidor
 
-            let conteneddor_organizacion = document.querySelector(".contenedor-organizacion-a-mostrar")
-            conteneddor_organizacion.appendChild(organizacion_especifica)
+            let nombre = e.innerHTML.trim();
+            
+            fetch(url)
+                .then(response=>response.json())
+                .then(data=>{
+                    let organizacion = data.organizaciones.find(o=>o.nombre==nombre)
+
+                    if(organizacion){
+                        let serviciosId = organizacion.servicios.map(id=>id.trim())
+
+                        let servicios = data.servicios.filter(servicio => serviciosId.includes(servicio.id))
+                        let nombreServicios = servicios.map(servicio => servicio.nombre)
+
+                        console.log(nombreServicios)
+
+                        let organizacion_especifica = document.createElement("div")
+
+                        organizacion_especifica.innerHTML = `<p>${nombre} - Servicios</p><ul>${nombreServicios.map(nombre => `<li>${nombre}</li>`).join('')}</ul>`
+                        
+                        let contenedor_organizacion = document.querySelector(".contenedor-organizacion-a-mostrar");
+                        
+                        contenedor_organizacion.innerHTML = '';
+                        contenedor_organizacion.appendChild(organizacion_especifica);
+                    }   
+
+                })
+
+            .catch(error=>console.error("Error al cargar el archivo", error))
         })
     })
 
-    // consultas
-    let url = "./js/datos.json"
+})
 
-    fetch(url)
-        .then(response => {
-        // verificar si la respuesta es exitosa
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
-        }
-        // Convertir la respuesta a JSON
-        return response.json();
-        })
-        .then(data => {
-        // Trabajar con los datos
-        console.log(data);
-
-        // Ejemplo: Obtener todos los servicios de una familia específica
-        const familiaId = 'f2'; // ID de la familia que deseas filtrar
-        const serviciosDeFamilia = data.servicios.filter(servicio => servicio.id_familia_servicios === familiaId);
-
-        console.log(serviciosDeFamilia);
-        })
-        .catch(error => {
-        // Manejo de errores
-        console.error('Hubo un problema con la consulta fetch:', error);
-        });
-    })
-
-/* realizar un diagrama de flujo que explique lo siguiente, un usuario debe kingresar a un portal con sus credenciales, seleccionar el servicio, hacer clic en crear, colocar la información solicitada, enviar su requerimiento, con esto se crea un ticket, si el ticket  */
+/* diagramas de flujo sobre la creación y atención de tickets */

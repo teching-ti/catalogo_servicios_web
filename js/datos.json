@@ -1,5 +1,5 @@
 {
-    "familia de servicio": [
+    "familias": [
         {
             "id": "f1",
             "nombre_familia": "Servicio de Soporte Técnico y Mantenimineto"
@@ -464,6 +464,56 @@
             "id": "ss66",
             "id_servicio": "s18",
             "nombre": "VPN"
+        }
+    ],
+    "organizaciones": [
+        {
+            "nombre": "Administración y Finanzas",
+            "servicios": ["s1", "s2,", "s3"]
+        },
+        {
+            "nombre": "Comercial",
+            "servicios": ["s4", "s5,", "s6"]
+        },
+        {
+            "nombre": "Gerencia",
+            "servicios": ["s1", "s2,", "s3", "s4", "s5,", "s6", "s7", "s8,", "s9"]
+        },
+        {
+            "nombre": "Gestión Energética",
+            "servicios": ["s1", "s2,", "s3"]
+        },
+        {
+            "nombre": "HSQE",
+            "servicios": ["s1", "s2,", "s3"]
+        },
+        {
+            "nombre": "IDQA",
+            "servicios": ["s1", "s2,", "s3"]
+        },
+        {
+            "nombre": "Legal",
+            "servicios": ["s1", "s2,", "s3"]
+        },
+        {
+            "nombre": "Marketing",
+            "servicios": ["s1", "s2,", "s3"]
+        },
+        {
+            "nombre": "Planeamiento",
+            "servicios": ["s1", "s2,", "s3"]
+        },
+        {
+            "nombre": "Proyectos",
+            "servicios": ["s1", "s2,", "s3"]
+        },
+        {
+            "nombre": "Salud",
+            "servicios": ["s1", "s2,", "s3"]
+        },
+        {
+            "nombre": "Tecnologías de la información",
+            "servicios": ["s1", "s2,", "s3"]
         }
     ]
 }

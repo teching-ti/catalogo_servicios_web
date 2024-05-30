@@ -22,7 +22,8 @@ header{
 
 .header-oscuro{
     color: #f1f2f6;
-    background: linear-gradient(138deg, rgba(2,5,15,1) 0%, rgba(10,33,61,0.9304096638655462) 78%, rgba(20,57,16,0.8603816526610644) 100%);
+    background: linear-gradient(297deg, rgba(44,102,51,1) 0%, rgba(4,25,46,1) 29%, rgba(0,3,8,1) 100%);
+    /* background: linear-gradient(138deg, rgba(2,5,15,1) 0%, rgba(10,33,61,0.9304096638655462) 78%, rgba(20,57,16,0.8603816526610644) 100%); */
 }
 
 .header-claro{
@@ -294,11 +295,12 @@ header{
 }
 
 .btn-organizacion:hover {
-    background-color: rgb(60, 84, 119); /* Fondo un poco más claro al pasar el ratón */
+    background-color: rgb(31, 52, 83); /* Fondo un poco más claro al pasar el ratón */
 }
 
 .contenedor-organizacion-a-mostrar{
-    background: red;
+    font-size: 1.2rem;
+    background: rgba(10, 10, 10, 1)
 }
 
 
