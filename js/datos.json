@@ -26,7 +26,7 @@
         {
             "id": "s1",
             "id_familia_servicios": "f2",
-            "nombre": "Actualización de base de datos del personal (por definir nombre)" 
+            "nombre": "Actualización de base de datos del personal" 
         }, 
         {
             "id": "s2",
@@ -468,52 +468,81 @@
     ],
     "organizaciones": [
         {
-            "nombre": "Administración y Finanzas",
-            "servicios": ["s1", "s2,", "s3"]
+            "nombre": "Administración Jefatura",
+            "servicios": ["s4", "s5", "s8", "s9", "s17", "s18", "s10", "s11", "s3", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
         {
-            "nombre": "Comercial",
-            "servicios": ["s4", "s5,", "s6"]
+            "nombre": "Contabilidad",
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
         {
-            "nombre": "Gerencia",
-            "servicios": ["s1", "s2,", "s3", "s4", "s5,", "s6", "s7", "s8,", "s9"]
+            "nombre": "Logística",
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
+        },
+        {
+            "nombre": "Recepción",
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
+        },
+        {
+            "nombre": "RR.HH",
+            "servicios": ["s1", "s2", "s7", "s8", "s9", "s17", "s10", "s11", "s13" , "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
+        },
+        {
+            "nombre": "TI",
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13" , "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
+        },
+        {
+            "nombre": "Comercial y Licitaciones",
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13" , "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
+        },
+        {
+            "nombre": "Comercial y Licitaciones - Jefatura",
+            "servicios": ["s4", "s5", "s8", "s9", "s17", "s18", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
         {
             "nombre": "Gestión Energética",
-            "servicios": ["s1", "s2,", "s3"]
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
+        },
+        {
+            "nombre": "Gestión Energética - Jefatura",
+            "servicios":["s4", "s5", "s8", "s9", "s17", "s18", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
         {
             "nombre": "HSQE",
-            "servicios": ["s1", "s2,", "s3"]
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
         {
-            "nombre": "IDQA",
-            "servicios": ["s1", "s2,", "s3"]
+            "nombre": "HSQE - jefatura",
+            "servicios": ["s4", "s5", "s8", "s9", "s17", "s18", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
+        },
+        {
+            "nombre": "ID&QA",
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
+        },
+        {
+            "nombre": "ID&QA - Jefatura",
+            "servicios": ["s4", "s5", "s8", "s9", "s17", "s18", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
         {
             "nombre": "Legal",
-            "servicios": ["s1", "s2,", "s3"]
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
         {
             "nombre": "Marketing",
-            "servicios": ["s1", "s2,", "s3"]
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
         {
             "nombre": "Planeamiento",
-            "servicios": ["s1", "s2,", "s3"]
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
-        {
+        {   
             "nombre": "Proyectos",
-            "servicios": ["s1", "s2,", "s3"]
+            "servicios": ["s4", "s8", "s9", "s17", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         },
         {
-            "nombre": "Salud",
-            "servicios": ["s1", "s2,", "s3"]
-        },
-        {
-            "nombre": "Tecnologías de la información",
-            "servicios": ["s1", "s2,", "s3"]
+            "nombre": "Proyectos - Jefatura",
+            "servicios": ["s4", "s5", "s8", "s9", "s17", "s18", "s10", "s11", "s13", "s15", "s19", "s21", "s6", "s12", "s14", "s20", "s22"]
         }
+        
     ]
 }

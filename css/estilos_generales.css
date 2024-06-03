@@ -298,11 +298,23 @@ header{
     background-color: rgb(31, 52, 83); /* Fondo un poco más claro al pasar el ratón */
 }
 
+/* Servicios a mostrar */
 .contenedor-organizacion-a-mostrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10em 0 ;
     font-size: 1.2rem;
-    background: rgba(10, 10, 10, 1)
+    background: rgb(97, 94, 95);
+    transition:  opacity 0.3s ease;
 }
 
+.hidden {
+    opacity: 0;
+}
+.visible {
+    opacity: 1;
+}
 
 .circle {
     width: 220px;
@@ -313,6 +325,26 @@ header{
     border: dotted #fff;
     border-radius: 50%; /* Hace que el div se vea como un círculo */
     animation: spin 2.2s linear infinite; /* Aplica la animación llamada "spin" */
+}
+
+.lista-servicios{
+    list-style: none;
+}
+
+.lista-servicios .servicio {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: background-color 0.5s;
+}
+
+.lista-servicios .servicio.expand .familia {
+    display: block;
+}
+
+.probando{
+    width: 80%;
 }
 
 /* Definición de la animación */
